@@ -10,8 +10,8 @@ from fastapi.responses import Response
 
 app = FastAPI()
 
-SECRET_KEY = "Jxv0SBIbNvGQ3CYIqJdAGhpjsVVBXqKTH/zWHdBmzgo="
-PASSWORD_SALT = "47+KWFKxPiAkY1o0CNwxk7GY8bWy2Xzn5flnamLup+4="
+SECRET_KEY = "Jxv0SBIbNvGQ3CYIqJdAGhpjsVVBXqKTH/zWHdBmzgo=" #for example
+PASSWORD_SALT = "47+KWFKxPiAkY1o0CNwxk7GY8bWy2Xzn5flnamLup+4=" #for example
 
 def sign_data(data: str) -> str:
     return hmac.new(
@@ -37,7 +37,7 @@ def verify_password(login: str, password: str) -> bool:
 
 users = {
     "test@mail.ru": {
-        "name": "Popa",
+        "name": "Alex",
         "password": "a7531543b7510212a447cc5dfc3ffe26abfee289b896a7fa60386868152e1d00", #123
         "balance": 100000
     },
