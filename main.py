@@ -1,11 +1,10 @@
+import base64
+import hashlib
+import hmac
+import json
 from typing import Optional
 
-import json
-import base64
-import hmac
-import hashlib
-
-from fastapi import FastAPI, Form, Cookie
+from fastapi import Cookie, FastAPI, Form
 from fastapi.responses import Response
 
 app = FastAPI()
